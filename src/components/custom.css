@@ -183,9 +183,10 @@ body {
 .carousel-caption p {
   color: #fff;
 }
+/* ===== PRODUCT CARD FIX ===== */
 .product-card {
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -193,32 +194,6 @@ body {
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-
-.product-img {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.product-card .btn {
-  font-size: 0.8rem;
-}
-
-.product-card .btn-outline-light:hover {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-  color: #fff;
-}
-.product-card {
-  border: none;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
 }
 
 .product-img {
@@ -234,5 +209,5 @@ body {
 
 .card-price {
   font-weight: bold;
-  color: #0d6efd; /* primary color for price */
+  color: #0d6efd;
 }

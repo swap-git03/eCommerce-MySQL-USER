@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "../components/ProductCard";
 
 const dummyProducts = [
   { title: "Wireless Earbuds", price: 49.99, image: "/assets/product1.jpg" },
@@ -12,17 +12,15 @@ const dummyProducts = [
 
 export default function Products() {
   return (
-   <div className="container my-5">
-  <h3 className="text-white mb-4">Featured Products</h3>
+   <div className="container my-4">
   <div className="row g-4">
     {dummyProducts.map((prod, idx) => (
-      <div key={idx} className="col-12 col-md-4"> {/* 3 cards per row on md+ */}
+      <div key={idx} className="col-12 col-sm-6 col-md-4 d-flex">
         <ProductCard {...prod} />
       </div>
     ))}
   </div>
 </div>
 
-    
   );
 }
